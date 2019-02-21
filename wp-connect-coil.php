@@ -23,3 +23,22 @@ License: GPL2
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+
+if ( !class_exists('Wp_Connect_Coil') ) {
+  class Wp_Connect_Coil_Taro {
+    public function __construct() {
+      add_filter( 'wp_head', array( $this, 'custom_meta_tag_for_coil' ) );
+      add_action( 'admin_menu', array( $this, 'add_menu_for_coil' ) );
+    }
+    function custom_meta_tag_for_coil() {
+      echo '<meta name="monetization" content="" />';
+    }
+    function add_menu_for_coil() {
+      add_submenu_page( 'options-general.php', 'Coil Setting','Coil Setting','manage_options', 'coil-setting', array(&$this, 'options_page') );
+    }
+    function options_page() {
+      echo 'Write this.';
+    }
+  }
+}
+$ConnectCoilClass = new Wp_Connect_Coil_Taro();
