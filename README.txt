@@ -30,8 +30,8 @@ From your WordPress dashboard.
 = Minimum Requirements =
 
 * WordPress 4.5 or greater
-* PHP version 7 or greater
-* MySQL version 5.6 or greater
+* PHP version 5.6.20 or greater
+* MySQL version 5.5 or greater
 
 == Frequently Asked Questions ==
 Q: Where can I contact if a problem occurs?<br />
