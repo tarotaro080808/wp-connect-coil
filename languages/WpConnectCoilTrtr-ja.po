@@ -49,7 +49,7 @@ msgstr ""
 #: wp-connect-coil.php:90
 msgid "Then, please register the acquired payment pointer in Coil."
 msgstr ""
-"そして、CoilのWebサイトで取得した支払いポインタ(Payment Pointer)を登録"
+"そして、取得した支払いポインタ(Payment Pointer)をCoilのWebサイトに登録"
 "してください。"
 
 #: wp-connect-coil.php:98
